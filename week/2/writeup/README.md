@@ -40,9 +40,10 @@ Digital acknowledgement of honor pledge: Bryan Soriano
 When I was doing the first part of the assignment, I found Mr. Krueger's 
 Instagram and noticed the flight ticket. I thought maybe I could scan the
 bar code to find a secret but that didn't work. Later on, I read part 2
-and saw we needed to use the flight ticket. I used the password to nc
-into the admin server, then looked to see if I could find any files. 
-I looked into /home/ and saw the flight records folder, and remembered the
-flight ticket from before and used it to find the correct txt file.
-CMSC389R-{c0rn3rstone-air-27670}
+and saw we needed to use the flight ticket. I guessed the username to use,
+then I ran the python script which eventually found the password.
+I used the password to nc into the admin server, then looked to see 
+if I could find any files. I looked into /home/ and saw the flight records folder,
+and remembered the flight ticket from before and used it to find the correct txt file.
+Flag: CMSC389R-{c0rn3rstone-air-27670}
 
