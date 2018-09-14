@@ -29,7 +29,7 @@ Digital acknowledgement of honor pledge: Bryan Soriano
 
 7. Linux Ubuntu. I used the nmap -O command.
 
-8. <!-- CMSC389R-{h1dden_fl4g_in_s0urce} -->
+8. \<!-- CMSC389R-{h1dden_fl4g_in_s0urce} -->
 "CMSC389R-{dns-txt-rec0rd-ftw}"
 
 ### Part 2 (55 pts)
