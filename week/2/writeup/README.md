@@ -14,8 +14,11 @@ Digital acknowledgement of honor pledge: Bryan Soriano
 1. kruegster1990's real name is Fred Krueger. I found it on twitter.
 
 2. He is from Silver Spring, MD, and born in 1990. Found on twitter.
+
    Reddit account with same username.
+   
    Instagram account with same username, has a picture of an airline ticket.
+   
    Email: kruegster@tutanota.com
 
 3. 142.93.118.186 . I used a domain to IP address website.
