@@ -12,4 +12,4 @@ Digital acknowledgement of honor pledge: Bryan Soriano
 
 ### Part 1 (100 pts)
 
-* Test
+* Vulnerability 1 **Weak Password**
