@@ -20,3 +20,10 @@ Digital acknowledgement of honor pledge: Bryan Soriano
   and also avoid words/numbers that someone can guess by viewing his social media profile/knowing more about him (pokemon on instagram,
   birthday numbers, etc.). Fred should make a password with at least 16 characters in length, which uses A-Z, a-z, 0-9 and symbols. This
   would ensure a high level of entropy within his password.
+
+* **Vulnerability 2: Open Ports**
+  Another vulnerability I found was Fred keeping unnecessary ports open (ports not needed for his website to function). Since port 1337
+  was open, I was able to interface with his admin server. By closing this port, Fred will minimize the attack surface for any attackers, 
+  making it much more difficult for someone to hack into his servers. Fred should close these ports through his router settings, or by 
+  using a firewall.
+  
