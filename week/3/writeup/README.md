@@ -18,8 +18,8 @@ Digital acknowledgement of honor pledge: Bryan Soriano
   to brute force his password, which allowed me to access the admin server. If Fred was using a stronger password, I would not have
   been able to brute force access. To make a stronger password, Fred should avoid using words which can be found in a dictionary,
   and also avoid words/numbers that someone can guess by viewing his social media profile/knowing more about him (pokemon on instagram,
-  birthday numbers, etc.). Fred should make a password with at least 16 characters in length, which uses A-Z, a-z, 0-9 and symbols. This
-  would ensure a high level of entropy within his password. [link to Google!](http://google.com)
+  birthday numbers, etc.). Fred should make a password with at least 16 characters in length, which uses A-Z, a-z, 0-9 and symbols. [This
+  would ensure a high level of entropy within his password.](http://rumkin.com/tools/password/passchk.php)
 
 * **Vulnerability 2: Exposed Ports**
 
