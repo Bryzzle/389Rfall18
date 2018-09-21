@@ -27,4 +27,7 @@ Digital acknowledgement of honor pledge: Bryan Soriano
   was open, I was able to interface with his admin server. By closing port 1337 and any other unneccesary ports, Fred will be able to 
   block attackers from interfacing with the closed ports. [This will minimize the attack surface, reducing security risk, making it more difficult for someone to hack into his servers.](https://www.tripwire.com/state-of-security/featured/understanding-constitutes-attack-surface-2/) Fred should close these ports through his router settings, or by using a firewall.
   
-* **Vulnerability 3: **
+* **Vulnerability 3: Robots.txt**
+
+  Fred uses the robots.txt file to try to hide the /secret/ directory from users/attackers. This is a security risk, since [robots.txt
+  does not enforce any access control over any of the directories that it hides.](https://portswigger.net/kb/issues/00600600_robots-txt-file) 
