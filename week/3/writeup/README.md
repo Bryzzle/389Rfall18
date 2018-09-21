@@ -18,7 +18,7 @@ Digital acknowledgement of honor pledge: Bryan Soriano
 
 * **Vulnerability 2: Exposed Ports**
 
-  Another vulnerability I found was Fred keeping unnecessary ports open (ports not needed for his website to function). Since port 1337 was open, I was able to interface with his admin server. By closing port 1337 and any other unneccesary ports, Fred will be able to block attackers from interfacing with the closed ports. [This will minimize the attack surface, reducing security risk, making it more difficult for someone to hack into his servers.](https://www.tripwire.com/state-of-security/featured/understanding-constitutes-attack-surface-2/) Fred should close these ports through his router settings, or by using a firewall.
+  Another vulnerability I found was Fred keeping unnecessary ports open (ports not needed for his website to function). Since port 1337 was open, I was able to interface with his admin server. By closing port 1337 and any other unneccesary ports, Fred will be able to block attackers from interfacing with the ports. [This will minimize the attack surface, reducing security risk, making it more difficult for someone to hack into his servers.](https://www.tripwire.com/state-of-security/featured/understanding-constitutes-attack-surface-2/) Fred should close these ports through his router settings, or by using a firewall.
   
 * **Vulnerability 3: Robots.txt**
 
