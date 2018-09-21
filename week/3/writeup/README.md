@@ -30,4 +30,4 @@ Digital acknowledgement of honor pledge: Bryan Soriano
 * **Vulnerability 3: Robots.txt**
 
   Fred uses the robots.txt file to try to hide the /secret/ directory from users/attackers. This is a security risk, since [robots.txt
-  does not enforce any access control over any of the directories that it hides.](https://portswigger.net/kb/issues/00600600_robots-txt-file) 
+  does not enforce any access control over any of the directories that it hides.](https://portswigger.net/kb/issues/00600600_robots-txt-file) An attacker's bot may see that /secret/ is hidden, and just try to access it anyways, and it would be granted access.
