@@ -8,6 +8,8 @@
 """
 
 import socket
+import os
+import re
 
 host = "cornerstoneairlines.co" # IP address here
 port = 45 # Port here
@@ -34,4 +36,5 @@ def execute_cmd(cmd):
 
 
 if __name__ == '__main__':
-    print("IMPLEMENT ME")
+    cmd = input()
+    print cmd
