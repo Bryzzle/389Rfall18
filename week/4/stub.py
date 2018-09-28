@@ -26,7 +26,7 @@ def execute_cmd(cmd):
 def shell():
     path = "/"
     while(True):
-        cmd = raw_input(path.strip() + "> ")
+        cmd = raw_input(path.strip() + "> ").strip()
         if (cmd == "exit"):
             break
         elif (cmd.startswith("cd")):
@@ -51,7 +51,7 @@ def help():
 
 if __name__ == '__main__':
     while(True):
-        cmd = raw_input("> ")
+        cmd = raw_input("> ").strip()
         if (cmd == "shell"):
             shell()
         elif (cmd.startswith("pull")):
