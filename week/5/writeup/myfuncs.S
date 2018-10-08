@@ -13,7 +13,7 @@ my_memset:
         mov rcx, rdx  ;moves 3rd argument to counter register       
 L1:
         mov [rdi], sil;deref rdi (1st arg) and set it equal to char in sil
-        add rdi, 1
+        add rdi, 1    ;inc
         loop L1
         leave         ;moves down the stack pointer to the current base pointer,
                       ;and restores our saved base pointer, effectively
@@ -32,10 +32,10 @@ my_strncpy:
         ;;;;;;;;;;;;;;;;;;;;;
         mov rcx, rdx
 L2:     
-        mov byte al, [rsi]
-        mov byte [rdi], al
-        add rdi, 1
-        add rsi, 1
+        mov al, [rsi] ;deref rsi and move it to temp register
+        mov [rdi], al ;deref rdi and move val at temp register in
+        add rdi, 1    ;inc
+        add rsi, 1    ;inc
         loop L2
 
         leave         ;moves down the stack pointer to the current base pointer,
