@@ -14,6 +14,6 @@ Digital acknowledgement of honor pledge: Bryan Soriano
   
   The next thing I had to figure out was how to dereference the pointer passed by one of the arguments, so that I could change its value. I figured out I could do mov [rdi] to accomplish this, but I was having errors because of the size of the second operand. I figured out that the second register/operand had to match the size of the what the first register is asking for (a byte). I used mov [rdi], sil and it worked since sil is only one byte. 
   
-  The last thing I had to figure out was how to get the register to move by one, so that the letter I was copying in would shift along the string. I had to thing about how I would move a pointer in C. In C you would just do p++. So I incremented the register, rdi, by 1, and it worked.
+  The last thing I had to figure out was how to get the register to move by one, so that the letter I was copying in would shift along the string. I had to think about how I would move a pointer in C. In C, you would just do p++, so I incremented the register, rdi, by 1 and it worked.
   
   The second function, was mostly the same idea except I had to first store the value of [rsi] into a temporary variable, since the program would not compile if I did mov [rdi], [rsi].
