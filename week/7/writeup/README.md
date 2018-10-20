@@ -12,17 +12,17 @@ Digital acknowledgement of honor pledge: *PUT YOUR NAME HERE*
 
 ### Part 1 (40 pts)
 
-1. 
+1. JPEG file
 
-2. 
+2. John Hancock Center in Chicago, Illinois
 
-3. 
+3. 2018:08:22 11:33:24
 
-4. 
+4. iPhone 8 camera
 
-5. 
+5. 539.5 m
 
-6.
+6. CMSC389R-{look_I_f0und_a_str1ng} and 
 
 ### Part 2 (55 pts)
 
