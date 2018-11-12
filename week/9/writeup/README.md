@@ -17,5 +17,7 @@ For the first part, I first read in the files (hashes, probable-v2-top1575.txt).
 
 
 ### Part 2 (40 Pts)
+For the second part, I started off by just running the stub part2.py code to see what information the server was sending. I saw that each time the server would send something like "Find me the [hash] of [string]". I tried to nc into it and manually provide the hash, and that's when I saw that it said "Correct!", and then sent another hash to compute. I figured it would keep doing this for a while, so I started to write the code that could do this.
 
+I had to extract parts of the string that followed a certain pattern, so I ended up just using regex. The regex I used was "Find me the (.+?) hash of (.\*)", which gave me the hash to use in the first parentheses, and the string to hash in the second parentheses.
 
