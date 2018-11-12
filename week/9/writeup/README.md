@@ -11,7 +11,7 @@ Digital acknowledgement of honor pledge: Bryan Soriano
 ## Assignment 9 Writeup
 
 ### Part 1 (60 Pts)
-![Image of Yaktocat](389pic1)
+![Image of Yaktocat](389pic1.png)
 
 
 ### Part 2 (40 Pts)
