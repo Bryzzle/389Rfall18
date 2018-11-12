@@ -13,15 +13,18 @@ port = 7331     # port
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((host, port))
 
-# receive some data
-data = s.recv(1024)
-reg = re.search('Find me the (.+?) hash of (.*)', data).groups()
-print(data)
-algorithm = hashlib.new(reg[0])
-print(reg[0])
-print(algorithm)
-print(reg[1])
-hashed = algorithm.update(reg[1].encode('utf-8')).hexdigest()
-print(hashed)
+while(1):
+	# receive some data
+	data = s.recv(1024)
+	print(data)
+	if "win" in data: break
+	reg = re.search('Find me the (.+?) hash of (.*)', data).groups()
+	algorithm = reg[0]
+	hashme = reg[1]
+	hashobj = hashlib.new(algorithm)
+	# print(algorithm)
+	hashobj.update(hashme)
+	hashed = hashobj.hexdigest()
+	s.send(hashed + "\n")
 # close the connection
 s.close()
