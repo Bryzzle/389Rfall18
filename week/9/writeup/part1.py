@@ -7,11 +7,16 @@ import string
 
 # this will work if you place this script in your writeup folder
 wordlist = open("../probable-v2-top1575.txt", 'r')
-# lines = [line.rstrip('\n') for line in wordlist]
+passlist = [line.rstrip('\n') for line in wordlist]
+hashes = [line.rstrip('\n') for line in open("hashes")]
+
 # a string equal to 'abcdefghijklmnopqrstuvwxyz'.
 salts = string.ascii_lowercase
 
 for salt in salts:
-    print(salt)
+    # do stuff
+    for password in passlist:
+    	hashed = hashlib.sha512(salt + password).hexdigest()
+    	if hashed in hashes:
+    		print("hash: " + hashed + " salt: " + salt + " pass: " + password)
 
-print(salts)
