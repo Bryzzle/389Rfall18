@@ -17,9 +17,9 @@ For the first part, I first read in the files (hashes, probable-v2-top1575.txt).
 
 
 ### Part 2 (40 Pts)
-For the second part, I started off by just running the stub part2.py code to see what information the server was sending. I saw that each time the server would send something like "Find me the [hash] of [string]". I tried to nc into it and manually provide the hash, and that's when I saw that it said "Correct!", and then sent another hash to compute. I figured it would keep doing this for a while, so I started to write the code that could do this.
+For the second part, I started off by just running the stub part2.py code to see what information the server was sending. I saw that each time the server would send something like "Find me the [hash] of [string]". I tried to nc into it and manually provide the hash, and that's when I saw that it said "Correct!", and then sent another hash to compute. I figured it would keep doing this for a while, so I started to write the code that could do process automatically.
 
-I had to extract parts of the string that followed a certain pattern, so I ended up just using regex. The regex I used was "Find me the (.+?) hash of (.\*)", which gave me the hash to use in the first parentheses, and the string to hash in the second parentheses. 
+I had to extract strings from a string that followed a certain pattern, so I ended up using regex. The regex I used was "Find me the (.+?) hash of (.\*)", which gave me the hash to use in the first parentheses, and the string to hash in the second parentheses. 
 
 After finding the strings, I had to figure out how to make the hashlib object change depending on the algorithm type requested. I had to do this in a CMSC414 project, so I knew there had to be a way. Once I found the new() and update() functions, I tried using them similarly to how I used sha512() in the first part, "hashed = hashlib.sha512(salt + password).hexdigest()". This didn't work because hexdigest() couldn't be called directly on the hashobj.update(). I separated these lines to make it work, and it did.
 
