@@ -13,3 +13,5 @@ salts = string.ascii_lowercase
 
 for salt in salts:
     # do stuff
+    for hash in wordlist:
+    	print(hash)
