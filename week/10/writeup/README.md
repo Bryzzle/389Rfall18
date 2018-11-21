@@ -23,4 +23,9 @@ CMSC389R-{i_still_put_the_M_between_the_DV}
 
 ### Part 2 (30 Pts)
 
+1. gpg --gen-key
+2. gpg --import pgpassignment.key 
+3. gpg --output message.private --recipient president@csec.umiacs.umd.edu --encrypt stub.py
+
+
 
