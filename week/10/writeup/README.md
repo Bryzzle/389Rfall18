@@ -18,6 +18,9 @@ Crafting the payload was the hardest part of this assignment. At first, to make 
 
 CMSC389R-{i_still_put_the_M_between_the_DV}
 
+![](389payload.png)
+
+
 ### Part 2 (30 Pts)
 
 
