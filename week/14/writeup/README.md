@@ -24,7 +24,7 @@ The first thing that I tried was looking for somewhere on the website that took 
 
 1. I looked at the hint to see that "startTimer('{{ timer }}');" was the source of the issue. After seeing the hint about trying just a single quote to see what happens, I saw the error console said "Invalid or unexpected token". I guessed that maybe the single quote was being interpreted as part of the command instead of as user input. I tried thinking about this problem like SQL injection as well, so I did the command " '); alert('')" which I thought would be interpreted as "startTimer(''); alert('')". However, it threw an error and the console showed me that it was interpreted as "startTimer(''); alert('')');" To solve this, I removed the "')" from my input, to make the line be interpreted as "startTimer(''); alert('');" and it worked. Solution: " '); alert('"
 
-1.
+1. 
 
 1.
 
