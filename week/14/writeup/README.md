@@ -15,3 +15,5 @@ The first thing that I tried was looking for somewhere on the website that took 
 
 
 ### Part 2 (30 Pts)
+
+1. The prompt said that "user input is directly included in the page without proper escaping", so I made the user input the alert javascript code, "<script> alert("") </script>". As the prompt stated, the code was put into the page upon searching and executed.
