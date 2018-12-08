@@ -17,3 +17,5 @@ The first thing that I tried was looking for somewhere on the website that took 
 ### Part 2 (30 Pts)
 
 1. The prompt said that "user input is directly included in the page without proper escaping", so I made the user input the alert javascript code, "<script> alert("") </script>". As the prompt stated, the code was put into the page upon searching and executed.
+
+1. The first thing I noticed in the 2nd level is that, there was a pink word, which showed that the website was still accepting HTML tags from user input. I tried using the script command from the first part, but that did not work at all. I looked at the hints to see that the onerror attribute was what I needed to use. I looked it up on google and saw that it can be used to trigger events on errors. I did <img src="askdlfja" onerror="alert('')"/> to make the exploit happen.
