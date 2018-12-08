@@ -24,8 +24,8 @@ The first thing that I tried was looking for somewhere on the website that took 
 
 1. I looked at the hint to see that "startTimer('{{ timer }}');" was the source of the issue. After seeing the hint about trying just a single quote to see what happens, I saw the error console said "Invalid or unexpected token". I guessed that maybe the single quote was being interpreted as part of the command instead of as user input. I tried thinking about this problem like SQL injection as well, so I did the command " '); alert('')" which I thought would be interpreted as "startTimer(''); alert('')". However, it threw an error and the console showed me that it was interpreted as "startTimer(''); alert('')');" To solve this, I removed the "')" from my input, to make the line be interpreted as "startTimer(''); alert('');" and it worked. Solution: " '); alert('"
 
-1. 
+1. For this one, I noticed that once you click sign up, the URL becomes "next=confirm", so I tried putting "alert('')" in place of confirm. This did not work, so I went to the hints and saw the document that said you could do "javascript:doSomething()". So I did "javascript:alert('')", and then clicked the next button which caused the alert to come up.
 
-1.
+1. I noticed that I could change the "gadget" that was loaded by changing the name of the js file in the URL. I didn't know where to go from here, so I looked at the hints and saw that I could call external js using google's api. I tried putting "https://www.google.com/jsapi?callback=alert", but it did not work so I inspected the source code. From there I saw that the regex "url.match(/^https?:\/\//" was used to stop the "https" portion of the external js from being called. This doesnt work since it is case sensitive, so I just changed my input to be "HTTPs://www.google.com/jsapi?callback=alert".
 
 
